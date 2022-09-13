@@ -4,13 +4,13 @@ import '../model/event_model.dart';
 
 class EventsProvider with ChangeNotifier {
   Future<List<Event?>> fetchUpcomingEvents() async {
+    print("in fetch upcoming");
     QuerySnapshot snapshot =
         await FirebaseFirestore.instance.collection('events').get();
     List<Event?> upcomingEvents = snapshot.docs.map((d) {
-      //print(d["startDate"].toDate().compareTo(DateTime.now()));
+      print('await done in docs');
       if (d["eventEndDate"].toDate().compareTo(DateTime.now()) >= 0) {
         print("present event");
-       
         return Event(
           eventId: d["eventId"],
           eventDescription: d["eventDescription"],

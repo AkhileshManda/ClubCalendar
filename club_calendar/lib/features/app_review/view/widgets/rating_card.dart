@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import '../../../../styles.dart';
-import '../../controller/app_feedback_provider.dart';
-import 'package:provider/provider.dart';
+
 
 Widget RatingCard(String title,context, review) {
-  var styles = new Styles();
+  var styles = Styles();
   return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Card(

@@ -37,7 +37,7 @@ class _EventScreenState extends State<EventScreen> {
         key: _scaffoldKey,
         appBar: AppBar(
           leading: IconButton(
-              icon: Icon(Icons.menu),
+              icon: const Icon(Icons.menu),
               onPressed: () {
                 print("clicked");
                 _scaffoldKey.currentState!.openDrawer();
@@ -66,7 +66,8 @@ class _EventScreenState extends State<EventScreen> {
                   );
                 }
 
-                List<Event?> events = snapshot.data as List<Event?>;
+                List<Event?> temp = snapshot.data as List<Event?>;
+                final List<Event?> events = temp.whereType<Event>().toList();
                 Map<String, List<Event?>> data =
                     new Map<String, List<Event?>>();
                 for (int i = 0; i < events.length; i++) {

@@ -50,7 +50,8 @@ class _EventDetailScreenState extends State<EventDetailScreen> {
             icon: const Icon(Icons.close)),
       ),
       body: Stack(
-        children: [SingleChildScrollView(
+        children: [
+          SingleChildScrollView(
           child: Column(
             children: [
               FutureBuilder(
@@ -75,6 +76,7 @@ class _EventDetailScreenState extends State<EventDetailScreen> {
                 child: Text(
                   widget.event.eventName,
                   style: styles.titleStyle(),
+                  textAlign: TextAlign.center,
                 ),
               ),
               Container(
