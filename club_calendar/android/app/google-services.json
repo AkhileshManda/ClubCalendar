@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572368673238",
+    "project_id": "clubcalendar-ff6b0",
+    "storage_bucket": "clubcalendar-ff6b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572368673238:android:1ed059cb2a771f1698ec77",
+        "android_client_info": {
+          "package_name": "com.example.club_calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572368673238-kf41gvupsd5njc23d96hqb2b3fi1ehf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.club_calendar",
+            "certificate_hash": "01c4086e70a62d9864756e4f689c7f2e0b16ef2c"
+          }
+        },
+        {
+          "client_id": "572368673238-rk7igsf7ji5rshebn6sg7qu58usjnem3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnz6pfBTFhEONtVsxKP9TPUlwA2KwKOjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572368673238-rk7igsf7ji5rshebn6sg7qu58usjnem3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
