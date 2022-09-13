@@ -2,7 +2,6 @@ import 'package:club_calendar/features/auth/model/google_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart' as neu;
-import '../../../screens/home_screen.dart';
 import '../../../styles.dart';
 import '../../events/view/event_screen.dart';
 

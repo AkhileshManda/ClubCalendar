@@ -4,7 +4,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../../screens/home_screen.dart';
+import '../../events/view/event_screen.dart';
+
 
 class Authentication {
   static SnackBar customSnackBar({required String content}) {
@@ -22,13 +23,7 @@ class Authentication {
     User? user = FirebaseAuth.instance.currentUser;
 
     if (user != null) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (context) => UserInfoScreen(
-            user: user,
-          ),
-        ),
-      );
+      Navigator.pushReplacementNamed(context, EventScreen.routeName);
     }
     return firebaseApp;
   }

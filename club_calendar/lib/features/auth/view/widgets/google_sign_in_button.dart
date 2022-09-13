@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../screens/home_screen.dart';
+import '../../../events/view/event_screen.dart';
 import '../../model/google_auth.dart';
 
 
@@ -42,13 +41,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 });
 
                 if (user != null) {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(
-                      builder: (context) => UserInfoScreen(
-                        user: user,
-                      ),
-                    ),
-                  );
+                  Navigator.pushReplacementNamed(context, EventScreen.routeName);
                 }
               },
               child: Padding(
